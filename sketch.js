@@ -72,11 +72,12 @@ function setup(){
 }
 
 function draw(){
-
+background("white");
     noStroke();
     textSize(35);
-    fill("white");
+    fill("purple");
     text("score:"+score,750,40);
+    stroke("black");
    fill("blue");
    block1.display();
    block2.display();
@@ -169,9 +170,5 @@ function mouseDragged(){
           slingShot.attach(this.polygon);
         }
 
-        score(){
-            if(this.visibilty<0&&this.visibilty>-105){
-                score++;
-            }
-        }
+      
   }
