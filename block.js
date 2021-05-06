@@ -13,9 +13,16 @@ class Block{
         this.width=width;
         this.height=height;
         this.visibility=255;
-
+        
         World.add(world,this.body)
     }
+    
+      score(){
+            if(this.visibilty<0&&this.visibilty>-105){
+                score++;
+            }
+        }
+    
     display(){
         if(this.body.speed<3){
         var angle = this.body.angle;
